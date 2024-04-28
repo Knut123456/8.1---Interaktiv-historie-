@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+}
+.Handling{
+    justify-content: space-between;
+}
+
+.Handlingimg img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right:auto;
+    border: 1px solid rgb(121, 81, 81);
+}
+
+.valg {
+    justify-content: space-between;
+}
+.valg button {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.valgimg img {
+    width: 100px;
+    height: 100px;
+    padding: 0%;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeout {
+   100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
+p {
+    color: white;
+    margin-left: 50%;
+}
+
+.progress_bar_tid_container {
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 10px;
+}
+
+.progress_bar_tid_container .progress_bar_tid {
+    position: absolute;
+    height: 100%;
+    background-color: #ad1f1f;
+    border-radius: 10px;
+}
+
+@keyframes progress_animation {
+    0% {width: 0%;}
+
+    100% {width: 100%;}
+    
+}
+
