@@ -25,23 +25,22 @@ if (han1 == true) {
         h1b2.style.animation = "fadein 5s"; // 5s
         h1b1.style.display = "none";
         h1b2.style.display = "flex";
+    }, 5000);
+    setTimeout(() => {
+        valg1.style.animation = "fadein 5s"; // 5s
+        h1b2.style.display = "none";
+        valg1.style.display = "flex";
         progress_bar_tid_container_id1.style.display = "flex";
-        progress_bar_tid_container_id1.style.animation = "progress_animation 5s forwards";
-        progress_bar_tid_container_id1.addEventListener("animationend", () => {
-            location.reload();
-        })
-        ;
-        }, 5000);
+        // progress_bar_tid_container_id1.style.animation = "progress_animation 5s forwards";
+        // progress_bar_tid_container_id1.addEventListener("animationend", () => {
+        //     location.reload();
+        // })
+             }, 10000);
         }
 
 
 
 
-h1b2.addEventListener("click", function () {
-    valg1.style.display = "flex";
-
-
-})
 
 // Handling 1
 
