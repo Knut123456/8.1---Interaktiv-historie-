@@ -22,14 +22,15 @@ body {
    margin-right: auto;
 }
 
-.valgimg img {
+.valg img {
     width: 100px;
     height: 100px;
     padding: 0%;
 }
 
 @keyframes fadein {
-    0% {opacity: 0;}
+    0% {opacity: 0;
+    }
     100% {opacity: 1;}
 }
 @keyframes fadeout {
@@ -47,6 +48,7 @@ p {
     background-color: #ccc;
     position: relative;
     border-radius: 10px;
+
 }
 
 .progress_bar_tid_container .progress_bar_tid {

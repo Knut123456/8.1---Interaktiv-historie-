@@ -8,10 +8,10 @@ let T2 = document.getElementById("T2")
 let h1b1 = document.getElementById("h1b1")
 let h1b2 = document.getElementById("h1b2")
 let progress_bar_tid_container_id1 = document.getElementById("progress_bar_tid_container_id1") 
-let progress_bar_tid_id1 = document.getElementById("progress_bar_tid") 
+let progress_bar_tid_id1 = document.getElementById("progress_bar_tid_id1") 
 let valg1 = document.getElementById("valg1") 
 
-
+let progress_bar_percentage
 
 let han1 = true; //handling 1 animation 
 
@@ -21,34 +21,27 @@ if (han1 == true) {
     h1b2.style.display = "none";
     valg1.style.display = "none";
     progress_bar_tid_container_id1.style.display = "none";
-setTimeout(() => {
-h1b2.style.animation = "fadein 5s"; // 5s
-h1b1.style.display = "none";
-h1b2.style.display = "flex";
-valg1.style.display = "flex";
-valg1.style.display = "flex";
-han1 = false;
-progress_bar_tid_container_id1.style.display = "flex"
-progress_bar_tid_container_id1.style.animation = "progress_animation 5s forwards"
-progress_bar_tid_container_id1.addEventListener("formdata",  {
-// Code to execute when animation ends
+    setTimeout(() => {
+        h1b2.style.animation = "fadein 5s"; // 5s
+        h1b1.style.display = "none";
+        h1b2.style.display = "flex";
+        progress_bar_tid_container_id1.style.display = "flex";
+        progress_bar_tid_container_id1.style.animation = "progress_animation 5s forwards";
+        progress_bar_tid_container_id1.addEventListener("animationend", () => {
+            location.reload();
+        })
+        ;
+        }, 5000);
+        }
+
+
+
+
+h1b2.addEventListener("click", function () {
+    valg1.style.display = "flex";
+
+
 })
-}, 5000);
-}
-
-
-function tidf1() { // Betyr tidfunksjon 1
-
-}
-
-T2.addEventListener("click", function () {
-   if (han1 == false) {
-        
-   }
-})
-
- 
-
 
 // Handling 1
 
