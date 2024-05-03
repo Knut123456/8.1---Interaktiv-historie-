@@ -3,6 +3,16 @@ body {
 }
 .Handling{
     justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+.Handling p {
+    color: white;
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 2rem;
 }
 
 .Handlingimg img {
@@ -12,39 +22,30 @@ body {
     margin-left: auto;
     margin-right:auto;
     border: 1px solid rgb(121, 81, 81);
+    
 }
 
 .valg {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .valg button {
    margin-left: auto;
    margin-right: auto;
+   justify-content: space-evenly;
    
 }
 
 .valg img {
-    width: 600px;
+    width: 500px;
     align-items: center;
+    justify-content: center;
     
 }
 
-.valg_1_1 {
-    background-color: #ad1f1f;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 50%;
-    bottom: 10%;
-}
 
-.valg_1_2 {
-    background-color: #ad1f1f;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    
-}
 
 @keyframes fadein {
     0% {opacity: 0;
@@ -58,7 +59,7 @@ body {
 
 p {
     color: white;
-    margin-left: 50%;
+    
 }
 
 .progress_bar_tid_container {
@@ -70,7 +71,6 @@ p {
 }
 
 .progress_bar_tid_container .progress_bar_tid {
-    position: absolute;
     height: 100%;
     background-color: #ad1f1f;
     border-radius: 10px;
@@ -80,6 +80,18 @@ p {
     0% {width: 0%;}
 
     100% {width: 100%;}
-    
+}
+
+.neste_pil {
+    width: 130px;
+     height: 100px;
+   justify-content: center;
+   visibility: hidden;
+}
+
+.neste_pil img {
+    width: 100px;
+    height: 100px;
+    visibility: visible;
 }
 
