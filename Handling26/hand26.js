@@ -17,7 +17,6 @@ if (b1V == true) {
     b1.style.animation = "fadeout 5s";
     b1.style.display = "block";
     b2.style.display = "none";
-    
 }
 
 tb2.addEventListener('click', function () {
@@ -25,15 +24,13 @@ tb2.addEventListener('click', function () {
         this.scrollIntoView({behavior: "smooth"});
         b2.style.display = "block ";
         b2V = true;
-   
     });
 
- 
 
-    let T24 = document.getElementById("T24") 
-    T24.addEventListener("click", function () {
-        location.href = "/Handling24/han24.html";
-        
+
+    let T1 = document.getElementById("T1") 
+    T1.addEventListener("click", function () {
+        location.href = "/Index.html";
     })
 
-  
+    

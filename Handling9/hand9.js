@@ -39,13 +39,12 @@ tb2.addEventListener('click', function () {
         }
         });
 
-    let T12 = document.getElementById("T12") 
-    T2.addEventListener("click", function () {
-        location.href = "/Handling 6/han6.html";
-        
+    let T12 = document.getElementById("T12")
+    T12.addEventListener("click", function () {
+        location.href = "/Handling12/han12.html ";
     })
 
-    let T11 = document.getElementById("T12") 
+    let T11 = document.getElementById("T11") 
     T11.addEventListener("click", function () {
         location.href = "/Handling9/han9.html";
         
