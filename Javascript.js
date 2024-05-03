@@ -37,6 +37,7 @@ th1b2.addEventListener('click', function () {
         this.scrollIntoView({behavior: "smooth"});
         h1b2.style.display = "block ";
         h1b2V = true;
+        localStorage.removeItem("balltre")
     }
     });
 
@@ -58,11 +59,14 @@ th1b2.addEventListener('click', function () {
     let H5V = false;
     let H2V = false;
 
-    
+let balltre = (localStorage.getItem("gun")) || 0; 
+let gun = (localStorage.getItem("gun")) || 0;
 
 let T2 = document.getElementById("T2") 
 T2.addEventListener('click', function () {
-    location.href = "/han2.html";
+    location.href = "/han2.html"
+    gun = true
+    localStorage.setItem("gun", gun)
     });
 
 
@@ -71,6 +75,8 @@ const T5 = document.getElementById("T5")
 
 T5.addEventListener('click', function () {
     location.href = "Handling5/han5.html";
+    balltre = true;
+    localStorage.setItem("balltre", balltre)
 });
 
 

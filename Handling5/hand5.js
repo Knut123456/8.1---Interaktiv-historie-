@@ -59,7 +59,3 @@ tb2.addEventListener('click', function () {
         location.href = "/Handling9/han9.html";
         
     })
-
-if (død == 4) {
-    alert("Du har dødt!")
-}

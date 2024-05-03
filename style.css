@@ -1,15 +1,17 @@
+
+
 body {
     background-color: black;
 }
+
 .Handling{
     justify-content: space-between;
     flex-direction: column;
 
 }
 
-
 .Handling p {
-    color: white;
+   
     text-align: center;
     margin-top: 10px; 
     font-size: 2rem;
@@ -84,7 +86,7 @@ p {
 
 .neste_pil {
     width: 130px;
-     height: 100px;
+    height: 100px;
    justify-content: center;
    visibility: hidden;
 }
@@ -95,3 +97,22 @@ p {
     visibility: visible;
 }
 
+
+.neste_pil p {
+    width: 100px;
+    height: 100px;
+    visibility: visible;
+}
+
+.ulike_valg {
+    font-size: 2rem;
+    color:red;
+    background-color: #ad1f1f;
+    
+}
+
+.ulike_valg button {
+    font-size: 2rem;
+    color:red;
+
+}

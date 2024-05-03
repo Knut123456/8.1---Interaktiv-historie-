@@ -32,6 +32,7 @@ tb2.addEventListener('click', function () {
    
     });
 
+    let død = Number(localStorage.getItem("død")) || 0;
     tvalg1.addEventListener('click', function () {
         if (b2V == true) {
             this.scrollIntoView({behavior: "smooth"});
@@ -44,6 +45,12 @@ tb2.addEventListener('click', function () {
             progress_bar_tid_container_id.addEventListener("animationend", () => {
                  location.reload();
                  location.href = "/index.html";
+                 død = død + 1;
+                 
              })
         }
         });
+
+        
+        
+     
