@@ -28,9 +28,9 @@ tb2.addEventListener('click', function () {
 
 
 
-    let T1 = document.getElementById("T1") 
-    T1.addEventListener("click", function () {
-        location.href = "/Index.html";
+    let T25 = document.getElementById("T25") 
+    T25.addEventListener("click", function () {
+        location.href = "/Handling 6/han6.html";
     })
 
     

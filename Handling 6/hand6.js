@@ -20,7 +20,7 @@ if (b1V == true) {
     b1.style.display = "block";
     valgh1.style.display = "none";
     b2.style.display = "none";
-    progress_bar_tid_container_id   .style.display ="none";
+    progress_bar_tid_container_id.style.display ="none";
     
 }
 
@@ -31,8 +31,6 @@ tb2.addEventListener('click', function () {
         b2V = true;
    
     });
-
-    let død = Number(localStorage.getItem("død")) || 0;
     tvalg1.addEventListener('click', function () {
         if (b2V == true) {
             this.scrollIntoView({behavior: "smooth"});
@@ -45,8 +43,6 @@ tb2.addEventListener('click', function () {
             progress_bar_tid_container_id.addEventListener("animationend", () => {
                  location.reload();
                  location.href = "/index.html";
-                 død = død + 1;
-                 
              })
         }
         });

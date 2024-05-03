@@ -20,7 +20,7 @@ if (b1V == true) {
     b1.style.display = "block";
     valgh1.style.display = "none";
     b2.style.display = "none";
-    progress_bar_tid_container_id   .style.display ="none";
+    progress_bar_tid_container_id.style.display ="none";
     
 }
 

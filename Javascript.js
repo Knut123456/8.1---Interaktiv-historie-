@@ -38,6 +38,7 @@ th1b2.addEventListener('click', function () {
         h1b2.style.display = "block ";
         h1b2V = true;
         localStorage.removeItem("balltre")
+        localStorage.removeItem("gun")
     }
     });
 
@@ -59,7 +60,7 @@ th1b2.addEventListener('click', function () {
     let H5V = false;
     let H2V = false;
 
-let balltre = (localStorage.getItem("gun")) || 0; 
+let balltre = (localStorage.getItem("balltre")) || 0; 
 let gun = (localStorage.getItem("gun")) || 0;
 
 let T2 = document.getElementById("T2") 
