@@ -3,8 +3,6 @@
 
 // Handling 1
 let h1 = document.getElementById("h1")
-let h2 = document.getElementById("h2") 
-let h5 = document.getElementById("h5") 
 
 let h1b1 = document.getElementById("h1b1")
 let h1b2 = document.getElementById("h1b2")
@@ -50,8 +48,8 @@ th1b2.addEventListener('click', function () {
             valgh1V = true;
             progress_bar_tid_container_id1.style.display = "block";
             progress_bar_tid_container_id1.style.display = "block";
-             progress_bar_tid_container_id1.style.animation = "progress_animation 20s forwards";
-             progress_bar_tid_container_id1.addEventListener("animationend", () => {
+            progress_bar_tid_container_id1.style.animation = "progress_animation 20s forwards";
+            progress_bar_tid_container_id1.addEventListener("animationend", () => {
                  location.reload();
              })
         }
@@ -65,21 +63,21 @@ let gun = (localStorage.getItem("gun")) || 0;
 
 let T2 = document.getElementById("T2") 
 T2.addEventListener('click', function () {
-    location.href = "/han2.html"
+    location.href = "/Handlinger/Handling2/han2.html"
     gun = true
     localStorage.setItem("gun", gun)
     });
 
 
-const T5 = document.getElementById("T5")
+
+let T5 = document.getElementById("T5")
 
 
 T5.addEventListener('click', function () {
-    location.href = "Handling5/han5.html";
     balltre = true;
     localStorage.setItem("balltre", balltre)
+    location.href = "/Handlinger/Handling5/han5.html"
 });
 
-
-
+// Handling 1
 
