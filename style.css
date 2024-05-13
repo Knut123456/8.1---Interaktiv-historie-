@@ -85,10 +85,10 @@ p {
 }
 
 .neste_pil {
+    display: flex;
     width: 130px;
     height: 100px;
-   justify-content: center;
-   visibility: hidden;
+    visibility: hidden;
 }
 
 .neste_pil img {
