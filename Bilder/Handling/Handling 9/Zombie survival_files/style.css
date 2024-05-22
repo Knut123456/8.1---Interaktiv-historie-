@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+.Handling{
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+.Handling p {
+    color: white;
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 2rem;
+}
+
+.Handlingimg img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right:auto;
+    border: 1px solid rgb(121, 81, 81);
+    
+}
+
+.valg {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.valg button {
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: space-evenly;
+   
+}
+
+.valg img {
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+@keyframes fadein {
+    0% {opacity: 0;
+    }
+    100% {opacity: 1;}
+}
+@keyframes fadeout {
+   100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
+p {
+    color: white;
+    
+}
+
+.progress_bar_tid_container {
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.progress_bar_tid_container .progress_bar_tid {
+    height: 100%;
+    background-color: #ad1f1f;
+    border-radius: 10px;
+}
+
+@keyframes progress_animation {
+    0% {width: 0%;}
+
+    100% {width: 100%;}
+}
+
+.neste_pil {
+    width: 130px;
+    height: 100px;
+   justify-content: center;
+   visibility: hidden;
+}
+
+.neste_pil img {
+    width: 100px;
+    height: 100px;
+    visibility: visible;
+}
+
+.ulike_valg {
+    width: 400px;
+}

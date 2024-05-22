@@ -25,12 +25,4 @@ tb2.addEventListener('click', function () {
         b2.style.display = "block ";
         b2V = true;
     });
-
-
-
-    let TS = document.getElementById("TS") 
-    TS.addEventListener("click", function () {
-        location.href = "/Index.html";
-    })
-
     

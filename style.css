@@ -69,7 +69,6 @@ p {
     background-color: #ccc;
     position: relative;
     border-radius: 10px;
-
 }
 
 .progress_bar_tid_container .progress_bar_tid {
@@ -102,13 +101,17 @@ p {
     width: 100px;
     height: 100px;
     visibility: visible;
+    justify-content: right;
 }
 
 .ulike_valg {
-    font-size: 2rem;
+    width: 200px;
+    height: 200px;
     color:red;
     background-color: #ad1f1f;
-    
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 .ulike_valg button {

@@ -46,11 +46,11 @@ tb2.addEventListener('click', function () {
              })
         }
         });
-
+        
     let T6 = document.getElementById("T6") 
     T6.addEventListener("click", function () {
         location.href = "/Handlinger/Handling 6/han6.html";
-        localStorage.setItem("død" + 1)
+    
     })
 
     let T9 = document.getElementById("T9") 
