@@ -10,11 +10,15 @@ let b1V = true; //handling 1 bilde 1 varibel
 let b2V = false; //handling 1 bilde 2varibel  
 let valgh1V = false; //handling 1 valg varibel
 
+let H9L1 = document.getElementById("H9L1")
+let H9L2 = document.getElementById("H9L2")
+let H9L3 = document.getElementById("H9L3")
 if (b1V == true) {
     b1.style.animation = "fadeout 5s";
     b1.style.display = "block";
     valgh1.style.display = "none";
     b2.style.display = "none";
+    
 }
 
 tb2.addEventListener('click', function () {
@@ -22,8 +26,10 @@ tb2.addEventListener('click', function () {
         this.scrollIntoView({behavior: "smooth"});
         b2.style.display = "block ";
         b2V = true;
-
-        document.getElementById("audio_1").disabled = true;
+        H9L1.pause()
+        H9L2.pause()
+        H9L3.play()
+        
     });
 
     tvalg1.addEventListener('click', function () {

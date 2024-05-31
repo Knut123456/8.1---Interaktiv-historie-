@@ -1,7 +1,5 @@
 
 
-console.log("hei");
-
 let b1 = document.getElementById("b1")
 let b2 = document.getElementById("b2")
 let valgh = document.getElementById("valgh")
@@ -38,6 +36,14 @@ tvalg1.addEventListener('click', function () {
     });
 
 
+ import { plussdead } from "../../Javascript.js";
+ let TSD1 = document.getElementById("TSD1") 
+ TSD1.addEventListener("click", function () {
+    plussdead ();
+    if (localStorage.getItem("dead") < 5) {
+        location.href = "/index.html"
+    } 
+ })
 
 
 

@@ -1,21 +1,23 @@
-// localStorage.setItem("dead", 0);
+// let dead = 0
+// localStorage.setItem("dead", dead);
 
-// function plussdead (){
-//     localStorage.setItem("dead", localStorage.getItem("dead")+ 1)
-//     console.log(localStorage.getItem("dead"))
-//     console.log ("skjekker om død")
-// }
+ function plussdead (){
+       let dead = Number(localStorage.getItem("dead")) || 0;
+         console.log(dead), "1";
+         console.log ("hello");
+         dead = dead + 1;
+         localStorage.setItem("dead", dead);
+        if (localStorage.getItem("dead") >= 4) {
+             location.href = "/Handlinger/dead/dead.html"
+             
+         } 
+  }
 
-// export {plussdead} 
+ export {plussdead} 
 
-let dead = 0
 
-let TSD1 = document.getElementById("TSD1") 
-TSD1.addEventListener("click", function () {
-    dead = dead + 1;
-    location.href = "/Index.html"
-})
 
-if (dead == 4) {
-    
-}
+ 
+ 
+
+

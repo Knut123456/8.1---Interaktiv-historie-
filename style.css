@@ -1,5 +1,6 @@
 
 
+
 body {
     background-color: black;
 }
@@ -17,6 +18,11 @@ body {
     font-size: 2rem;
 }
 
+.H9P {
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 2rem;
+}
 .Handlingimg img {
     display: block;
     width: 500px;
@@ -61,7 +67,6 @@ body {
 
 p {
     color: white;
-    
 }
 
 .progress_bar_tid_container {

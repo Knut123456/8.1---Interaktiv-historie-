@@ -25,4 +25,17 @@ tb2.addEventListener('click', function () {
         b2.style.display = "block ";
         b2V = true;
     });
+
+ import { plussdead } from "/javascript.js";
+
+ let TSD1 = document.getElementById("TSD1") 
+ TSD1.addEventListener("click", function () {
+    plussdead ();
+    if (localStorage.getItem("dead") < 4) {
+        location.href = "/index.html"
+    } 
+ })
+    
+    
+
     
