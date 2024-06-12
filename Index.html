@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="Javascript.js"></script>
-    <script type="module" src="Index.js"></script>
+    <script type="module" src="index.js"></script>
     <title>Zombie survival</title>
 </head>
 <body>
-
+    
      <!-- Vil bare si at handling og bilder som har nummer er ikke etter rekkefølge det er bare et nummer slik at jeg vet hva det er
          Da kan se på histore i figma og vite hva som er kobla til hva 
          figma lenken til historien min er i onenote
          -->
+
+    <!-- start -->
+    <div class="start">
+        <H1>Hei velkommen til min historie</H1>
+        <img src="bilder/per.webp" class="per_bilde">
+        <p class="startp">vil du ha med sang</p>
+        <div class="start_valg" id = "start_valg">
+            <button class="musikk_valg" id="lyd_ikke"> <p>Vil ikke ha</p> </button>
+            <button class="musikk_valg" id="lyd"> <p>vil ha</p> </button>
+        </div>
+        <div id="til_historien" >
+            <p> klikk knappen for å komme til historien.</p>
+            <button id="til_historien_knapp" class="neste_pil">
+                <img src="bilder/neste_pil.webp" alt="">
+            </button>
+        </div>
+    </div>
+    
+    <!-- start -->
     <!-- handling 1 -->
-        <div id="h1" class="Handling">       
+        <div id="h1" class="Handling">      
+            <audio id="suspensfull_musikk" loop>
+                <source src="/music/suspensfull music.mp3" type="audio/mp3"/>
+            </audio>  
             <audio id="sad_music" loop>
                 <source src="/music/sad.mp3" type="audio/mp3"/>
             </audio>  
@@ -23,7 +45,7 @@
                 <source src="/music/dramatic_music/dramatic_music.mp3" type="audio/mp3"/>
             </audio>
             <audio id= "male_zombie"loop >
-                <source src="/music/dramatic_music/Male Zombie Roar.mp3 " type="audio/mp3"/>
+                <source src="/music/dramatic_music/Male Zombie Roar.mp3" type="audio/mp3"/>
             </audio>
             <div class="Handlingimg">
                <div id="h1b1">
@@ -129,37 +151,185 @@
          <!-- handling 6 -->
 
         <!-- handling 9 -->
-        <div id="h9" class="Handling">  
-        </div>
-        <div class="Handlingimg">
-           <div id="h9b1">
-                <img src="/Bilder/Handling/Handling 9/b1.webp"  > <!--bilde 1-->
-                <p class="H9P">Du hoppet ut men du mista beinet</p>
-                   <button id="H9tb2" class="neste_pil" >
-                        <img src="/bilder/neste_pil.webp" alt="">
-                   </button> 
-
-           </div>
-           <div id="h9b2">
-                <img src= "/Bilder/Handling/Handling 9/b2.webp"  ><!--bilde 2-->
-                    <p class="H9P">Per har kommet i skogen og er på vei til et hus</p> 
-                    <button id="tvalg9" class="neste_pil">
-                        <img src="/bilder/neste_pil.webp" alt="">
-                    </button>
-           </div>
-        </div>
-      
-        <div class="valg" id="valgh9">
-            <img src="/Bilder/Handling/Handling 9/Choice/main_valg.webp" alt="">
-            <div>
-                <button id="T12" class="ulike_valg">
-                    <p>Gå inn i huset</p>
-                </button>
-                <button id="T11" class="ulike_valg">
-                    <p>Gå unna huset</p>               
-                </button>
+        
+            <div id="h9" class="Handling">
+                <div class="Handlingimg">
+                    <div id="h9b1">
+                         <img src="/Bilder/Handling/Handling 9/b1.webp"  > <!--bilde 1-->
+                         <p class="H9P">Du hoppet ut men du mista beinet</p>
+                            <button id="H9tb2" class="neste_pil" >
+                                 <img src="/bilder/neste_pil.webp" alt="">
+                            </button> 
+         
+                    </div>
+                    <div id="h9b2">
+                         <img src= "/Bilder/Handling/Handling 9/b2.webp"  ><!--bilde 2-->
+                             <p class="H9P">Per har kommet i skogen og er på vei til et hus</p> 
+                             <button id="tvalg9" class="neste_pil">
+                                 <img src="/bilder/neste_pil.webp" alt="">
+                             </button>
+                    </div>
+                 </div>
+               
+                
+                     <div class="valg" id="valgh9">
+                         <img src="/Bilder/Handling/Handling 9/Choice/main_valg.webp" alt="">
+                         <div>
+                             <button id="T12" class="ulike_valg">
+                                 <p>Gå inn i huset</p>
+                             </button>
+                             <button id="T11" class="ulike_valg">
+                                 <p>Gå unna huset</p>               
+                             </button>
+                         </div> 
+                     </div>
             </div>
-    </div>
+
+
         <!-- handling 9 -->
+
+         <!-- handling 11 -->
+            <div id="h11" class="Handling">
+                <div class="Handlingimg">
+                    <div id="h11b1">
+                         <img src="/Bilder/Handling/Handling11/B1.webp"  > <!--bilde 1-->
+                         <p>Per har gått og gått seg vild</p>
+                            <button id="h11tb2" class="neste_pil" >
+                                 <img src="/bilder/neste_pil.webp" alt="">
+                            </button> 
+                    </div>
+                    <div id="h11b2">
+                         <img src= "/Bilder/Handling/Handling11/b2.webp"  ><!--bilde 2-->
+                             <p>Per har godt seg bort</p> 
+                             <button id="h11TS" class="neste_pil"> <!--Til start-->
+                                 <img src="/bilder/neste_pil.webp" alt="">
+                             </button>
+                    </div>
+                 </div>
+            </div>
+          
+          <!-- handling 11 -->
+
+        <!--handling 12 -->
+
+        <div id="h12" class="Handling">
+            <div class="Handlingimg">
+                <div id="h12b1">
+                        <img src="/Bilder/Handling/Handling12/B1.webp"  > <!--bilde 1-->
+                        <p>Inne i huset finner du en person, han heter john<d</p>
+                        <button id="h12tb2" class="neste_pil" >
+                                <img src="/bilder/neste_pil.webp" alt="">
+                        </button> 
+                </div>
+                <div id="h12b2">
+                        <img src= "/Bilder/Handling/handling12/B2.webp"  ><!--bilde 2-->
+                            <p>Han skjekker blodet ditt</p> 
+                            <button id="h12T24" class="neste_pil"> <!--Til start-->
+                                <img src="/bilder/neste_pil.webp" alt="">
+                            </button>
+                </div>
+                </div>     
+        </div>
+
+        <!-- handling 12 -->
+
+        <!-- handling 24 -->
+        <div id="h24" class="Handling">
+            <div class="Handlingimg">
+                <div id="h24b1">
+                     <img src="/Bilder/Handling/Handling24/B1.webp"  > <!--bilde 1-->
+                     <p>Han har en zombie fanget</p>
+                        <button id="h24tb2" class="neste_pil" >
+                             <img src="/bilder/neste_pil.webp" alt="">
+                        </button> 
+                </div>
+                <div id="h24b2">
+                     <img src= "/Bilder/Handling/Handling24/B2.webp"  ><!--bilde 2-->
+                         <p>John putter sprøyta med din blod i zombien</p> 
+                         <button id="h24T25" class="neste_pil">
+                             <img src="/bilder/neste_pil.webp" alt="">
+                         </button>
+                </div>
+             </div>     
+        </div>
+         <!-- handling 24 -->
+
+         <!-- handling 25 -->
+         <div id="h25" class="Handling">
+            <div class="Handlingimg">
+               <div id="h25b1">
+                    <img src="/Bilder/Handling/Handing25/B1.webp"  > <!--bilde 1-->
+                    <p>zombien blir om til en menneske men skrikene <br>zombien/mennesken gjorde tiltrekke seg alle zombier i nærheten  </p>
+                       <button id="h25T26_27" class="neste_pil" >
+                        <img src="/bilder/neste_pil.webp" alt="">
+                       </button> 
+               </div>
+        </div>
+            
+        <!-- handling 25 -->
+
+        <!-- handling 26 -->
+          <div id="h26" class="Handling"></div>>
+          <div class="Handlingimg">
+              <div id="h26b1">
+                   <img src="/Bilder/Handling/handling26/B1.webp"  > <!--bilde 1-->
+                   <p>Per går for å fange flere zombier men det er for mange</p>
+                      <button id="h26tb2" class="neste_pil" >
+                           <img src="/bilder/neste_pil.webp" alt="">
+                      </button> 
+              </div>
+              <div id="h26b2">
+                   <img src= "/Bilder/Handling/handling26/B2.webp"  ><!--bilde 2-->
+                       <p>Per døde selv om du ikke greide <br>å fange noen zombier tok du mange med seg</p> 
+                       <button id="h26TSD1" class="neste_pil">
+                           <img src="/bilder/neste_pil.webp" alt="">
+                       </button>
+              </div>
+           </div>
+      </div>
+        <!-- handling 26 -->
+
+        <!-- handling 27 -->
+        <div id="h27" class="Handling">
+            <div class="Handlingimg">
+                <div id="h27b1">
+                    <img src="/Bilder/Handling/Handling27/B1.webp"  > <!--bilde 1-->
+                    <p>Det er zombier ute for huset og du skyter på dem</p>
+                       <button id="h27tb2" class="neste_pil" >
+                            <img src="/bilder/neste_pil.webp" alt="">
+                       </button> 
+               </div>
+                <div id="h27b2">
+                     <img src= "/Bilder/Handling/Handling27/B2.webp"  ><!--bilde 2-->
+                        <p>Per går ut og kjemper zombiene</p> 
+                        <button id="h27T29" class="neste_pil">
+                            <img src="/bilder/neste_pil.webp" alt="">
+                        </button>
+                </div>
+            </div>
+        </div>
+        <!-- handling 27 -->
+        
+        <!-- handling 29 -->
+            <div id="h29" class="Handling">
+                <div class="Handlingimg">
+                    <div id="h29b1">
+                         <img src="/Bilder/Handling/Handling29/B1.webp"  > <!--bilde 1-->
+                         <p>Per har fanga noen zombier</p>
+                            <button id="h29tb2" class="neste_pil" >
+                                 <img src="/bilder/neste_pil.webp" alt="">
+                            </button> 
+                    </div>
+                     <div id="h29b2">
+                         <img src= "/Bilder/Handling/Handling29/B2.png"  ><!--bilde 2-->
+                         <p>Per får de til å bli mennesker igjen</p> 
+                         <button id="h29TA5" class="neste_pil"> <!--til avsluttning 5-->
+                             <img src="/bilder/neste_pil.webp" alt="">
+                         </button>
+                     </div>
+            </div>
+           
+        <!-- handling 29 -->
+
 </body>
 </html>

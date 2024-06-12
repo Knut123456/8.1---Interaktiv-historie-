@@ -1,5 +1,32 @@
+.musikk_valg {
+    width: 100px;
+    color:red;
+    background-color: #ad1f1f;
+    border-radius: 10px;
+    text-align: center;
+}
+.start_valg {
+    display: flex;
+}
 
+.startp {
+    font-size: 2rem;
+}
 
+.per_bilde {
+    width: 300px;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 body {
     background-color: black;
@@ -50,7 +77,6 @@ body {
     width: 500px;
     align-items: center;
     justify-content: center;
-    
 }
 
 
@@ -116,11 +142,9 @@ p {
     background-color: #ad1f1f;
     border-radius: 10px;
     text-align: center;
-
 }
 
 .ulike_valg button {
     font-size: 2rem;
     color:red;
-
 }

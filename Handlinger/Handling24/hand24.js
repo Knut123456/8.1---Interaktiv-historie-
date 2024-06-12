@@ -30,7 +30,7 @@ tb2.addEventListener('click', function () {
 
     let T25 = document.getElementById("T25") 
     T25.addEventListener("click", function () {
-        location.href = "/Handlinger/Handling25/han25.html";
+        location.href = "../handling25/han25.html";
     })
 
     

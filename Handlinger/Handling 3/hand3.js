@@ -30,7 +30,7 @@ tb2.addEventListener('click', function () {
     tvalg1.addEventListener('click', function () {
         if (b2V == true) {
             this.scrollIntoView({behavior: "smooth"});
-            valgh1.style.animation = "fadein 5s";
+            valgh1.style.animation = " fadein 5s"
             valgh1.style.display = "flex";
             valgh1V = true;
 
